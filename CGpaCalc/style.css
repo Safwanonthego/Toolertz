@@ -1,0 +1,175 @@
+@font-face{
+    font-family:popins; 
+    src: url(fonts/Poppins.ttf); 
+  }
+@font-face{
+    font-family:bree; 
+    src: url(fonts/Bree.ttf); 
+}
+
+:root{
+    font-size: 20px;
+    font-family: bree;
+    --text-primary: white;
+    --text-secondary: white;
+    --bg-primary: #9290C3;
+    --bg-secondary: #535C91;
+    --navbar-primary: #070F2B;
+    --navbar-secondary: #1B1A55;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: var(--bg-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#boxBG{
+    width: 43.5vw;
+    height: auto;
+    padding-bottom: 13vh;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#boxHead{
+    width: 96.5%;
+    height: 60px;
+    background-color: #3D6792;
+    border-radius: 10px;
+    position: absolute;
+    top: 13px;
+    display: flex;
+    align-items: center;
+}
+
+#cgpaBtn{
+    padding: 0;
+    margin: 0;
+    width: 100px;
+    height: 73%;
+    background-color: #6F8AD1;
+    color: white;
+    font-family: popins;
+    font-size: large;
+    position: absolute;
+    left: 9px;
+    border-radius: 8px;
+    border: none;
+
+}
+
+#gradeLetter{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 7px;
+    background-color: #6F8AD1;
+    position: absolute;
+    right: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+padding: 0px;
+margin: 0;
+}
+
+.cgpaHead{
+    font-family: popins;
+    color: white;
+}
+
+#cgpaTxt{
+    position: absolute;
+    left: 290px;
+    display: flex;
+    
+}
+
+
+
+
+
+#boxInput{
+    width: 96.5%;
+    height: auto;
+    background-color: #3D6792;
+    border-radius: 10px;
+    position: relative;
+    top: 88px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.inputBox{
+    margin: 20px 0 20px 20px;
+    width: 7.6rem;
+    height: 3.3rem;
+    border-radius: 7px;
+    background-color: #6F8AD1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputGp, .inputCredit{
+    text-align: center;
+    font-family: popins;
+    font-size: large;
+    color: darkslategray;
+    margin: 0;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+}
+
+.inputGp{
+    width: 3.5rem;
+    margin-right: 10px;
+}
+.inputCredit{
+    width: 2rem;
+}
+
+
+/* Hide arrows for Webkit browsers (Chrome, Safari) */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+#sectionBtn{
+    display: flex;
+    flex-direction: column;
+}
+
+#addSection, #removeSection{
+    color: white;
+    margin: 10px;
+    width: 2rem;
+    height: 2rem;
+    border: solid;
+    border-color: antiquewhite;
+    border-radius: 7px;
+    background-color: #6F8AD1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+i{
+    font-size: 1rem;
+}
