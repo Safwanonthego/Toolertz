@@ -1,0 +1,156 @@
+@font-face {
+    font-family: popins;
+    src: url(../fonts/Poppins.ttf);
+}
+@font-face {
+    font-family: bree;
+    src: url(fonts/Bree.ttf);
+}
+
+:root{
+    font-size: 18px;
+    font-family: popins;
+    --text-primary: white;
+    --text-seconday: black;
+    --bg-color: #4967B4;
+    --navigation-color: #293C6D;
+    --section-lite: #6F8AD1;
+    --section-mid: #4967B4;
+    --section-dark: #22335E;
+    --section-clicked: #2C4B9D;
+}
+
+/* Universal Settings --start */
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: var(--text-primary);
+}
+/* Hide arrows for Webkit browsers (Chrome, Safari) */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Universal Settings --end */
+
+body{
+    background-color: var(--bg-color);
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* NAVBAR --start */
+#navigationBar{
+    background-color: var(--navigation-color);
+    height: 3.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+#navigationBar > ul{
+    display: flex;
+    position: absolute;
+    left: 0;
+}
+#navigationBar >ul>li{
+    color: var(--text-primary);
+    background-color: var(--section-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 0 1rem;
+    border-radius: 6px;
+}
+#navigationBar >ul>li>a{
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+#navigationBar > a{
+    font-family: bree;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(var(--section-mid), var(--section-dark));
+    height: 100%;
+    width: 15rem;
+}
+#navigationBar > input{
+    position: absolute;
+    right: 0;
+    height: 1.8rem;
+    width: 12rem;
+    margin: 0 0.7rem 0 0;
+    font-family: popins;
+    padding-left: 8px;
+}
+/* NAVBAR --end */
+
+
+/* MainSection --Start */
+#toolSection{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 30%;
+}
+
+.toolName{
+    background-color: var(--section-dark);
+    height: 7rem;
+    width: 17rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: var(--section-dark) solid;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    padding: 0;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.toolNameLink{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toolName:hover{
+    background-color: #2a56c3;
+    border: var(--section-dark) solid;
+    transition: 0.4s;
+}
+
+/* MainSection --end */
